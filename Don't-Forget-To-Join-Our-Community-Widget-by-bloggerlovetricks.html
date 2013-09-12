@@ -1,15 +1,103 @@
-<fieldset class="redius" style="border: 2px solid #0066B3;">
-<legend class="redius" align="center" style="border: 0px solid #0066B3; padding: 
+<script language="javascript">
+document.write( unescape( '
+<html>
+<head>
+<title>Don't Forget To Join Our Community Widget Generator by BloggerLoveTricks</title>
+</head>
+<body>
+<script type='text/javascript'>
+function NBTcodegen() {
+/*alert("NBTLab");*/
+/*var c=document.getElementsByName("NBTtype");
+for(i=0;c.length;i++)
+{ 	if(c[i].checked)
+	{var x=c[i];
+	alert("You selected "+ x.value);
+	}
+}*/
+var txtarea=document.getElementsByName("textarea-box")[0];
+var NBTfb=document.getElementsByName("fb")[0].value;
+var NBTtwitter=document.getElementsByName("twitter")[0].value;
+var NBTposition=document.getElementsByName("position")[0].value;
+var NBTthemecss="";
+var c=document.getElementsByName("NBTtype");
+
+var widget=document.getElementsByName("widget.content")[0];
+<!-- BLT Theme CSS -->
+if(c[0].checked)
+{NBTthemecss="http://2.bp.blogspot.com/-JUTpNP9pHUA/UZpa78XoEKI/AAAAAAAAALU/CDA0i3RLmyg/s1600/NBT_Red.png";}
+else if(c[1].checked)
+{NBTthemecss="http://3.bp.blogspot.com/-eGfqizpK7a8/UZpa8XamxVI/AAAAAAAAALg/3w0j4PWZf4E/s1600/NBT_blue.png";}
+else if(c[2].checked)
+{NBTthemecss="http://4.bp.blogspot.com/-0Gu8H0omBPc/UZpa3heLB4I/AAAAAAAAAK0/HO4AW2bQxO4/s1600/NBT_Broun.png";}
+else if(c[3].checked)
+{NBTthemecss="http://2.bp.blogspot.com/-2X5yb7ehpzU/UZpa5cmLjfI/AAAAAAAAALI/zEVXUhdjWfM/s1600/NBT_Green.png";}
+else if(c[4].checked)
+{NBTthemecss="http://4.bp.blogspot.com/-8QIHbi9O7Qg/UZpa5vYHnEI/AAAAAAAAALE/P94HEkeLHs4/s1600/NBT_Orange.png";}
+<!-- BLT Theme CSS -->
+ 
+widget.value += " <script type=\"text\/javascript\" src=\"http:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.10.1\/jquery.min.js\"><\/script> &nbsp; <script type=\"text\/javascript\">$(window).scroll(function(){if($(document).scrollTop()>=$(document).height()\/4)$(\"#IGsocialslide\").show(\"slow\");else $(\"#IGsocialslide\").hide(\"slow\");});function closeIGsocialslide(){$('#IGsocialslide').remove();$.ajax({type:\"POST\",url:\"\/facebookpage.php\"});}<\/script>  "; 
+widget.value += " <style type='text\/css'> "; 
+widget.value += " #IGsocialslide{ "; 
+widget.value += " background:black url("+ NBTthemecss +") left top repeat-x; "; 
+widget.value += " border-radius:9px; "; 
+widget.value += " -moz-border-radius:8px; "; 
+widget.value += " -webkit-border-radius:8px; "; 
+widget.value += " -moz-box-shadow:inset 0 0 4px #333; "; 
+widget.value += " -webkit-box-shadow:inset 0 0 4px #333; "; 
+widget.value += " box-shadow:inner 0 0 3px #333; "; 
+widget.value += " padding:12px 14px 12px 14px; "; 
+widget.value += " width:300px; "; 
+widget.value += " position:fixed; "; 
+widget.value += " bottom:13px; "; 
+widget.value += " "+ NBTposition +":2px; "; 
+widget.value += " display:none; "; 
+widget.value += " z-index:3; "; 
+widget.value += " height:65px;} "; 
+widget.value += " <\/style> "; 
+widget.value += "   <div style=\"display: none;\" id=\"IGsocialslide\"> <a style=\"position:absolute;top:14px;right:10px;color:#D8C9C9;font-size:10px;font-weight:bold;\" href=\"javascript:void(0);\" onclick=\"return closeIGsocialslide();\">X<\/a> <span style=\"font-family: Tekton Pro; font-size: 20px; margin: 10px 0; text-shadow: 1px 1px 0 #868686;color:#F8F0F0;\">Don't forget to join our community!<\/span><br \/>   <div style=\"float:left; margin:15px;\"><iframe src=\"\/\/www.facebook.com\/plugins\/like.php?href=https%3A%2F%2Fwww.facebook.com%2F"+ NBTfb +"&send=false&layout=button_count&width=80&show_faces=false&action=like&colorscheme=light&font=arial&height=21\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:80px; height:21px;\" allowtransparency=\"true\"><\/iframe><\/div>   <div style=\"float:left; margin:15px;\"><a href=\"https:\/\/twitter.com\/"+ NBTtwitter +"\" class=\"twitter-follow-button\" data-show-count=\"true\" data-size=\"small\" data-show-screen-name=\"false\">Follow<\/a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<\/script><\/div> <\/div>   <div class='clear'><\/div> "; 
+widget.value += " <\/div> ";
+
+
+
+document.getElementsByName("go")[0].disabled = false;
+          document.getElementsByName("preview")[0].disabled = false;
+        }
+
+        function NBTpredemo()
+        {
+          var demodata = document.getElementsByName('NBTjs')[0].value + document.getElementsByName('widget.content')[0].value;
+          newwindow = window.open('', 'name', '');
+          var tmp = newwindow.document;
+          tmp.write('' + demodata + '');
+          tmp.close();
+}
+
+function NBTReset(){
+var widget=document.getElementsByName("fb")[0].value="BloggerLoveTricks"
+var widget=document.getElementsByName("twitter")[0].value="BloggerLoveTric"
+var widget=document.getElementsByName("position")[0].value="left"
+
+var widget=document.getElementsByName("NBTtype")[0].value="1"
+
+var widget=document.getElementsByName("widget.content")[0].value=""
+}
+</script>
+
+
+<div id="NBTgadmn">
+<fieldset class="redius" style="border: 2px solid #4d90fe;">
+<legend class="redius" align="center" style="border: 0px solid #4d90fe; padding: 
 
 5px 20px; margin-  left: 20px;"><center>Don't Forget To Join Our Community Widget by BloggerLoveTricks</center> </legend> 
 
-<br>
+</br>
 
 <style>
 .input-text,.text-input, .select-box{
  margin:0 2px;
  padding:4px 6px;
- border: 1px solid #0066B3;
+ border: 1px solid #4d90fe;
  -webkit-border-radius: 4px;
  -moz-border-radius: 4px;
  border-radius: 4px;
@@ -23,7 +111,7 @@
  max-width:auto;
 }
 .textarea-box, .textareaBox{
- border:1px solid #0066B3;
+ border:1px solid #4d90fe;
  padding:6px;
  -webkit-resize: none;
  -moz-resize: none;
@@ -53,7 +141,7 @@ border-radius: 10px; }
 }
 
 #NBTgadmn legend {
-	background: #0066B3;
+	background: #4d90fe;
 	color: #FFFFFF;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 13px;
@@ -70,7 +158,7 @@ border-radius: 10px; }
 	padding: 0 20px;
 }
 #NBTgad legend {
-	background: #0066B3;
+	background: #4d90fe;
 	color: #FFFFFF;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 13px;
@@ -84,91 +172,103 @@ border-radius: 10px; }
 </style>
 
 <div id="NBTgad">
-<fieldset class="redius" style="border: 1px solid #0066B3;"><legend class="redius" align="left" style="border: 1px solid #0066B3; padding: 4px 11px; margin-  left: 20px;">Select Widget Theme Color</legend>
-<table width="100%">
-<tbody><tr><td align="left" width="2%">
-<input checked="checked" id="NBTtype" name="NBTtype" value="1" type="radio">
+<fieldset class="redius" style="border: 1px solid #4d90fe;"><legend class="redius" align="left" style="border: 1px solid #4d90fe; padding: 4px 11px; margin-  left: 20px;">Select Widget Theme Color</legend>
+<table width='100%'>
+<tr><td align="left" width="2%">
+<input checked="checked" id="NBTtype" name="NBTtype" type="radio" value="1" />
 </td>
-  <td width="4%"><img src="http://2.bp.blogspot.com/-4zNdu_Yq2kE/UZpa3dhvFcI/AAAAAAAAAKw/L80E78g4Ztk/s1600/5.png"></td>
+  <td width="4%"><img src="http://2.bp.blogspot.com/-4zNdu_Yq2kE/UZpa3dhvFcI/AAAAAAAAAKw/L80E78g4Ztk/s1600/5.png" /></td>
   <td width="18%"></td>
   <td width="4%">
-<input id="NBTtype" name="NBTtype" value="2" type="radio"></td>
-	<td width="4%"><img src="http://1.bp.blogspot.com/-aMCvudtfmj4/UZpa11PrtvI/AAAAAAAAAKg/aAetQ0PAoB4/s1600/1.png"></td>
+<input id="NBTtype" name="NBTtype" type="radio" value="2"/></td>
+	<td width="4%"><img src="http://1.bp.blogspot.com/-aMCvudtfmj4/UZpa11PrtvI/AAAAAAAAAKg/aAetQ0PAoB4/s1600/1.png" /></td>
 	<td width="20%"></td>
 <td width="2%">
-<input id="NBTtype" name="NBTtype" value="3" type="radio"></td>
-	<td width="4%"><img src="http://1.bp.blogspot.com/-JR9tyJyULnI/UZpa1r7p7sI/AAAAAAAAAKY/HJlSpso8vjo/s1600/2.png"></td>
+<input id="NBTtype" name="NBTtype" type="radio" value="3"/></td>
+	<td width="4%"><img src="http://1.bp.blogspot.com/-JR9tyJyULnI/UZpa1r7p7sI/AAAAAAAAAKY/HJlSpso8vjo/s1600/2.png" /></td>
 	<td width="18%"></td>
     <td width="4%">
-<input id="NBTtype" name="NBTtype" value="4" type="radio"></td>
-<td width="4%"><img src="http://4.bp.blogspot.com/-S8BjhO5BSP4/UZpa16-qx-I/AAAAAAAAAKc/_2pyn9xUGwE/s1600/3.png"></td>
+<input id="NBTtype" name="NBTtype" type="radio" value="4"/></td>
+<td width="4%"><img src="http://4.bp.blogspot.com/-S8BjhO5BSP4/UZpa16-qx-I/AAAAAAAAAKc/_2pyn9xUGwE/s1600/3.png" /></td>
 	<td width="25%"></td> 
 	<td width="4%">
-<input id="NBTtype" name="NBTtype" value="5" type="radio"></td>
-<td width="4%"><img src="http://4.bp.blogspot.com/-0aOsZ62DtDo/UZpa4yEoosI/AAAAAAAAALA/Z6PEX_fVJEw/s1600/4.png"></td>
+<input id="NBTtype" name="NBTtype" type="radio" value="5"/></td>
+<td width="4%"><img src="http://4.bp.blogspot.com/-0aOsZ62DtDo/UZpa4yEoosI/AAAAAAAAALA/Z6PEX_fVJEw/s1600/4.png" /></td>
 	<td width="25%"></td> 
 </tr>
-</tbody></table>
+</table>
 
 </fieldset>
-<br>
+<br/>
 
-<fieldset class="redius" style="border: 1px solid #0066B3;"><legend class="redius" align="left" style="border: 1px solid #0066B3; padding: 4px 11px; margin-  left: 20px;">Customize</legend>
-<table width="100%">
-<tbody><tr>
-<td width="40%">Facebook Page Url</td>
-<td width="60%">: <input class="input-text" id="NBT" name="fb" value="
-BloggerLoveTricks" size="17" type="text"></td>
+<fieldset class="redius" style="border: 1px solid #4d90fe;"><legend class="redius" align="left" style="border: 1px solid #4d90fe; padding: 4px 11px; margin-  left: 20px;">Customize</legend>
+<table width='100%'>
+<tr>
+<td width='40%'>Facebook Page Url</td>
+<td width='60%'>: <input class='input-text' type='text' id='NBT' name='fb' value='BloggerLoveTricks' size='17'></td>
 </tr>
 
 <tr>
-<td width="40%">Twitter Username</td>
-<td width="60%">: <input class="input-text" id="NBT" name="twitter" value="
-BloggerLoveTric" size="17" type="text"></td>
+<td width='40%'>Twitter Username</td>
+<td width='60%'>: <input class='input-text' type='text' id='NBT' name='twitter' value='BloggerLoveTric' size='17'></td>
 </tr>
 
 <tr>
-<td width="40%"><label for="position">Widget Position?</label></td>
-<td width="60%">:
-<select class="select-box" id="position" name="position">
-<option value="left">Left</option>
-<option value="right">Right</option> 
+<td width='40%'><label for='position'>Widget Position?</label></td>
+<td width='60%'>:
+<select class='select-box' id='position'  name='position'>
+<option value='left'>Left</option>
+<option value='right'>Right</option> 
 </select>
 </td>
 </tr>
 <tr></tr><tr></tr>
-</tbody></table>
+</table>
 </fieldset>
-<br>
-<fieldset class="redius" style="border: 1px solid #0066B3;"><legend class="redius" align="left" style="border: 1px solid #0066B3; padding: 4px 11px; margin-  left: 
+<br/>
+<fieldset class="redius" style="border: 1px solid #4d90fe;"><legend class="redius" 
 
-20px;">Application / Buttons</legend> <br>
+align="left" style="border: 1px solid #4d90fe; padding: 4px 11px; margin-  left: 
+
+20px;">Application / Buttons</legend> </br>
 <center>
-<form abhfe="0" action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value="Generate" style="font-size:16px;width:115px;line-height:25px;font-weight:bold;" onclick="javascript:NBTcodegen();" type="button">
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank"><input value='Generate' style='font-size:16px;width:115px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:NBTcodegen();'/>
 
-<input style="font-weight:bold;font-size: 16px; width: 115px;" disabled="disabled" name="preview" value="Preview" onclick="javascript:NBTpredemo();" hidden="hidden" type="button">
+<input style="font-weight:bold;font-size: 16px; width: 115px;" type="button"disabled="disabled" name="preview" value="Preview" hidden="hidden"  onclick="javascript:NBTpredemo();"/>
 
-<input value="Reset" style="font-size:16px;width:115px;line-height:25px;font-weight:bold;" onclick="javascript:NBTReset();" type="button">
+<input value='Reset' style='font-size:16px;width:115px;line-height:25px;font-weight:bold;' type='button' onclick='javascript:NBTReset();'/>
 
-<input name="go" value="Add to Blogger" style="font-size:16px;width:200px;line-height:25px;font-weight:bold;" onclick="javascript:NBTcodegen();" type="submit">
+<input name="go" value='Add to Blogger' style='font-size:16px;width:200px;line-height:25px;font-weight:bold;' type='submit' onclick='javascript:NBTcodegen();'/>
 
-</form></center>
+</center>
 <textarea name="NBTjs" style="display: none; height: 0px; width: 0px;">
+
           
         </textarea>
 </fieldset>
-<br>
+<br/>
 
-<fieldset class="redius" style="border: 1px solid #0066B3;"><legend class="redius" align="left" style="border: 1px solid #0066B3; padding: 4px 11px; margin-  left: 
+<fieldset class="redius" style="border: 1px solid #4d90fe;"><legend class="redius" 
+
+align="left" style="border: 1px solid #4d90fe; padding: 4px 11px; margin-  left: 
 
 20px;">Generated Code</legend>
-<br>
-<textarea class="textarea-box" name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" style=" background:#ffffff;width:100%;height:125px;"></textarea>
-<input name="infoUrl" value="http://www.BloggerLoveTricks.com/" type="hidden">
-<input name="logoUrl" value="http://2.bp.blogspot.com/-dcf8j3mjHE8/UixdfeN-LsI/AAAAAAAAAfU/cnSEjksp7H4/s239/th_la-kute-08.gif
-" type="hidden">
-
-<br><br></fieldset></div>
-<br>
-<center><small> Copyright © 2012 All Rights Strictly Reserved by <a href="https://plus.google.com/115350509232150941047">Septian Rs</a> @ <a href="http://www.BloggerLoveTricks.com/">BloggerLoveTricks</a></small></center>
+<br/>
+<textarea class='textarea-box' name="widget.content" onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()"  style=' background:#ffffff;width:100%;height:125px;'>
+</textarea>
+<input name="infoUrl" type="hidden" value="http://www.BloggerLoveTricks.com/" />
+<input name="logoUrl" type="hidden" value="http://2.bp.blogspot.com/-dcf8j3mjHE8/UixdfeN-LsI/AAAAAAAAAfU/cnSEjksp7H4/s239/th_la-kute-08.gif
+" />
+</form>
+<br/><br/></div>
+<br/>
+<center><small> Copyright © 2013 All Rights Strictly Reserved by <a href="https://plus.google.com/115350509232150941047">Septian Rs</a> @ <a href="http://www.BloggerLoveTricks.com/">Blogger Love Tricks</a></small></center>
+</div></div>
 </fieldset>
+</fieldset>
+</body>
+</html>
+
+
+' ) );
+</script>
